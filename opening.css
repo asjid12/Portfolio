@@ -1,0 +1,74 @@
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox for layout */
+    min-height: 100vh; /* Set minimum height for full viewport */
+    background-color: #222; /* Darker background */
+    color: #fff; /* White text for readability */
+}
+
+header {
+    background-color: #333; /* Maintain black header base */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #F24E1E; /* Use red for the title */
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #F24E1E; /* Use red for the button background */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #e63913; /* Darken red on hover */
+}
+
+main {
+    padding: 20px;
+    width: 100%; /* Take full width */
+}
+
+/* Image container styles */
+.image-container {
+    width: 500px; /* Adjust as needed */
+    height: 300px; /* Adjust as needed */
+    overflow: hidden; /* Prevent image overflow */
+    position: relative; /* For positioning text if needed */
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Adjust as needed */
+    opacity: 0.8; /* Make the image slightly transparent */
+    transition: opacity 0.5s ease-in-out; /* Smooth opacity change on hover */
+}
+
+.image-container:hover .image {
+    opacity: 1; /* Full opacity on hover */
+}
+
+/* Add any additional styles for your website here */
